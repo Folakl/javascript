@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+rel="stylesheet">
+<link href="/dist/output.css" rel="stylesheet">
+<body>
+<div class="bg-blue-950 h-[100px] w-full">
+        <ul class="text-white flex items-center  gap-5 font-Roboto font-bold">
+           <li><img src="./ant-design_instagram-filledig.png" alt="" class = "w-[100px] h-[40px]  mx-10 my-5"> </li>
+           <li class=" h-[40px] w-[100px]   cursor-pointer " onclick="navigateTo('home')">HOME</li>
+           <li class=" h-[40px] w-[100px]  cursor-pointer  ">ABOUT US</li>
+           <li class=" h-[40px] w-[100px]  cursor-pointer  " onclick="navigateTo('login')">LOG IN</li>
+           <li class="  h-[40px] w-[200px]  cursor-pointer " onclick="navigateTo('forgotPassword')">FORGOT PASSWORD</li>
+           <li class="  h-[40px] w-[100px]   cursor-pointer   " onclick="navigateTo('signup')">SIGN UP</li>
+          
+           <li class=" bg-purple-950  h-[40px] w-[150px] rounded-lg text-center pt-2   hover:w-[160px] hover:scale-105 duration-300
+           ease-in  mx-10 ">CONTACT US</li>
+        </ul>
+</div>
+<div class="bg-slate-950  text-center   h-[800px] py-20 ">
+    <div class=" h-[600px] w-[500px] bg-blue-800 mx-[300px] rounded-lg">
+    <h1 class=" text-[20px] py-10 font-bold;">Log in</h1>
+    <H3 class="py-5 font-bold font-Roboto " >Username</H3>
+    <input name=""  placeholder="Enter Your Username" class="rounded-md pl-2 " id="nameId" >
+    <h1 class="py-4 font-bold font-Roboto" >Password</h1>
+    <input type="password" placeholder="Enter Your Password"  name=""  class="rounded-md pl-2" id="passwordId"> <br>
+  <button class="w-[100px] h-[40px] font-bold bg-purple-950 rounded-md my-5 " onclick="login()">LOG IN</button>
+    <h3 class="font-bold">OR</h3>
+    <button class="w-[100px] h-[40px] font-bold  bg-purple-950 rounded-md my-2" onclick="navigateTo('signup')">sign up here</button> <br>
+    <h3 class="py-2">forgot password?</h3>
+    <p class="text-white cursor-pointer " onclick="resetpassword()">reset</p>
+  </div>
+
+
+</div>
+
+<script src="./roult.js"></script>
+<script src="./login.js"></script>
+</body>
+</html>
