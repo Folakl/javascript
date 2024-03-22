@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-blue-950 h-[100px] w-full">
+        <ul class="text-white flex items-center  gap-10 font-Roboto font-bold">
+           <li><img src="./ant-design_instagram-filledig.png" alt="" class = "w-[100px] h-[40px]  mx-20 my-5"></li>
+           <li class=" h-[40px] w-[100px]   cursor-pointer " onclick="navigateTo('home')">HOME</li>
+           <li class=" h-[40px] w-[100px]  cursor-pointer  ">ABOUT US</li>
+           <li class=" h-[40px] w-[100px]  cursor-pointer  " onclick="navigateTo('login')">LOG IN</li>
+           <li class="  h-[40px] w-[200px]  cursor-pointer " onclick="navigateTo('forgotPassword')">FORGOT PASSWORD</li>
+           <li class="  h-[40px] w-[100px]   cursor-pointer   " onclick="navigateTo('signup')">SIGN UP</li>
+          
+           <li class=" bg-purple-950  h-[40px] w-[150px] rounded-lg text-center pt-2   hover:w-[160px] hover:scale-105 duration-300
+           ease-in   ">CONTACT US</li>
+        </ul>
+   </div>
+   <div>
+    <input type="text" id="nameId">
+    <input type="number">
+    <button onclick="reset()" class="w-100px bg-primary" >click here for new password</button>
+   </div>
+     <script src="./roult.js"></script>
+     <script>
+        function reset(){
+            let newpassword = Math.floor(Math.random()*10)+1
+            alert(`this is your new password${newpassword},take note of it `)
+        }
+    
+     </script>
+</body>
+</html>
