@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+<body>
+  <div class="bg-blue-950 h-[100px] w-full flex pt-2">
+    <li><img src="./ant-design_instagram-filledig.png" alt="" class = "w-[100px] h-[40px]  lg:mx-20 md:mx-20 mx-5 "></li>
+      <ul class="text-white flex items-center  lg:gap-10 md:gap-10 gap-2 lg:text-[20px] md:text-[20px] text-[10px]  font-Roboto font-bold">
+         <li class=" h-[40px] w-[100px] lg:ml-[300px] md:ml-[300px] ml-10   cursor-pointer " onclick="navigateTo('home')">HOME</li>
+         <li class=" h-[40px] w-[100px]  cursor-pointer  " onclick="navigateTo('login')">LOG IN</li>          
+         <li class="  h-[40px] w-[100px]   cursor-pointer " onclick="navigateTo('signup')">SIGN UP</li>
+         <li class=" bg-purple-950  h-[40px] w-[150px] rounded-lg text-center pt-2   hover:w-[160px] hover:scale-105 duration-300
+         ease-in   ">CONTACT US</li>
+      </ul>
+ </div>
+
+<div class="bg-blue-900 lg:h-[500px] md:h-[1200px] h-[800px]">
+  <h2 class="py-10 text-white mx-5">Welcome To TARA Bank App</h2>
+  <div class="flex justify-center">
+    <button class="bg-black text-white rounded-lg font-bold w-[200px] h-[50px]  mx-20 " onclick="navigateTo('signup')">GET STARTED</button>
+    
+  </div> 
+
+</div>
+<script src="./roult.js"></script>
+</body>
+</html>

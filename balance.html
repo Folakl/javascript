@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-blue-950 h-[100px] w-full flex pt-2">
+        <li><img src="./ant-design_instagram-filledig.png" alt="" class = "w-[100px] h-[40px]  lg:mx-20 md:mx-20 mx-5 "></li>
+          <ul class="text-white flex items-center  lg:gap-10 md:gap-10 gap-2 lg:text-[20px] md:text-[20px] text-[10px]  font-Roboto font-bold">
+             <li class=" h-[40px] w-[100px] lg:ml-[300px] md:ml-[300px] ml-10   cursor-pointer " onclick="navigateTo('home')">HOME</li>
+             <li class=" h-[40px] w-[100px]  cursor-pointer  " onclick="navigateTo('login')">LOG IN</li>          
+             <li class="  h-[40px] w-[100px]   cursor-pointer " onclick="navigateTo('signup')">SIGN UP</li>
+             <li class=" bg-purple-950  h-[40px] w-[150px] rounded-lg text-center pt-2   hover:w-[160px] hover:scale-105 duration-300
+             ease-in   ">CONTACT US</li>
+          </ul>
+     </div>
+<div class="bg-black flex justify-center lg:h-auto md:h-[1200px] h-[800px]">
+
+   <div class="w-[500px] h-[500px] lg:mx-[200px] md:mx-[100px] mx-5 py-20 text-center bg-[beige]  rounded-lg my-5" >
+    <h3 class="py-1 font-bold" id="wb">Welcome back <h3 id="currentname"></h3></h3>
+    <h3 class="font-bold">Account number <h3 id="accountnumbernew"></h3></h3>
+    <h3 class="font-bold py-4">Your balance: # <p id="yourbalance"></p></h3>
+
+    <h3 class="font-bold py-4">Enter amount</h3>
+    <input type="number" name="" id="addbalanceId" > 
+    <div class="mt-5">
+    <button class="w-[100px] h-[30px] bg-[brown] text-white rounded-md" onclick="withdraw()" >Withdraw</button> 
+    <button class="w-[100px] h-[30px] bg-[brown] text-white rounded-md"  onclick="deposit()">Deposit</button>
+    </div>
+    <h3 class=" cursor-pointer mt-5" onclick="logout()">log out</h3>
+    <h3></h3>
+
+
+  
+</div>
+   
+</div>
+
+    
+<script src="./roult.js"></script>
+<script src="./balance.js"></script>
+
+
+</body>
+</html>
