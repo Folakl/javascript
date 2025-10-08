@@ -1,5 +1,5 @@
 function brandInput(){
-    window.location.href = "/Bank.html"
+    window.location.href = "/javascript/Index.html"
 }
 function navigateTo(page){
     if (page === "signup" ){
@@ -18,7 +18,7 @@ function navigateTo(page){
         window.location.href = "/javascript/src/pages/login.html"
     }
     else if (page === "home"){
-        window.location.href = "/javascript/Bank.html"
+        window.location.href = "/javascript/Index.html"
     }
     else{
         alert("page not found")
