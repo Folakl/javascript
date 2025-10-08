@@ -1,4 +1,3 @@
-
 let user = JSON.parse(localStorage.getItem("users"))
 currentname.innerHTML = user[1].Name
 accountnumbernew.innerHTML = user[1].accountnumber
