@@ -24,8 +24,6 @@ else {
 function resetpassword(){
   let u = Math.random().toString(36)
     alert(u);
-  //  localStorage.setItem( user,JSON.stringify(u))
-  //  JSON.parse(localStorage.getItem(user))
    
 
 }
