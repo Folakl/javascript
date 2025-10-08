@@ -1,24 +1,24 @@
 function brandInput(){
-    window.location.href = "/javascript/Index.html"
+    window.location.href = "/Index.html"
 }
 function navigateTo(page){
     if (page === "signup" ){
-    window.location.href = "/javascript/src/pages/Signup.html"
+    window.location.href = "Signup.html"
     }
     else if (page === "createaccount"){
-        window.location.href = "/javascript/src/pages/login.html"
+        window.location.href = "/Signup.html"
     }
     else if (page === "forgotPassword"){
-        window.location.href = "/javascript/src/pages/reset.html"
+        window.location.href = "/reset.html"
     }
     else if (page === "balance"){
-        window.location.href = "/javascript/src/pages/balance.html"
+        window.location.href = "/balance.html"
     }
     else if (page === "login"){
-        window.location.href = "/javascript/src/pages/login.html"
+        window.location.href = "/login.html"
     }
     else if (page === "home"){
-        window.location.href = "/javascript/Index.html"
+        window.location.href = "/Index.html"
     }
     else{
         alert("page not found")
